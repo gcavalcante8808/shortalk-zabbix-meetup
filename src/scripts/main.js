@@ -7,6 +7,7 @@ var bullets = require('bespoke-bullets');
 var hash = require('bespoke-hash');
 var prism = require('bespoke-prism');
 var extern = require('bespoke-extern');
+var voltaire = require('bespoke-theme-voltaire')
 
 // Bespoke.js
 bespoke.from({ parent: 'article.deck', slides: 'section' }, [
@@ -16,5 +17,6 @@ bespoke.from({ parent: 'article.deck', slides: 'section' }, [
   bullets('.build, .build-items > *:not(.build-items)'),
   hash(),
   prism(),
+  voltaire(),
   extern(bespoke)
 ]);
